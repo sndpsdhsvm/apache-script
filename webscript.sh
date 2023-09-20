@@ -69,13 +69,9 @@ echo "########################################"
 sudo systemctl status $svc
 echo
 
-
+echo "########################################"
+echo "List the server root directory"
+echo "########################################"
 ls $rootLoc
 echo
 
-echo "########################################"
-echo "ip address"
-echo "########################################"
-ip addr show | grep enp0s8 | grep inet 
-echo
-echo
