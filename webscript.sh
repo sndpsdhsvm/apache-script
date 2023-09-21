@@ -4,7 +4,7 @@
 package="wget unzip httpd"
 svc="httpd"
 tmp="/tmp/webfiles/"
-url="https://www.tooplate.com/zip-templates/2131_wedding_lite.zip"
+url=$1
 if [[ "$url" =~ ^(http.+)/([^/]+)/([^/]+)$ ]]; then
     domain="${BASH_REMATCH[1]}"
     section1="${BASH_REMATCH[2]}"
