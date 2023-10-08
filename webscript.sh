@@ -3,7 +3,7 @@
 #Variables declared
 tmp="/tmp/webfiles/"
 rootLoc="/var/www/html/"
-url=""
+url="https://www.tooplate.com/download/2137_barista_cafe"
 if [[ "$url" =~ ^(http.+)/([^/]+)/([^/]+)$ ]]; then
     domain="${BASH_REMATCH[1]}"
     section1="${BASH_REMATCH[2]}"
@@ -12,7 +12,7 @@ fi
 
 yum --help &> /dev/null
 
-if[ $? -eq 0 ]
+if [ $? -eq 0 ]
 then 
     #set variables for Centos
     package="wget unzip httpd"
