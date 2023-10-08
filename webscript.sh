@@ -3,7 +3,7 @@
 #Variables declared
 tmp="/tmp/webfiles/"
 rootLoc="/var/www/html/"
-url="https://www.tooplate.com/download/2137_barista_cafe"
+url="https://www.tooplate.com/zip-templates/2137_barista_cafe.zip"
 if [[ "$url" =~ ^(http.+)/([^/]+)/([^/]+)$ ]]; then
     domain="${BASH_REMATCH[1]}"
     section1="${BASH_REMATCH[2]}"
